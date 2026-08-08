@@ -1,0 +1,166 @@
+@font-face {
+    font-family: titlefont;
+    src: url(./4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2);
+}
+@font-face {
+    font-family: titlefont2;
+    src: url(./4UaRrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iq2vgCI.woff2);
+}
+@font-face {
+    font-family: logofont;
+    src: url(./KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #F2F2F2;
+}
+#page-container{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#pokemon-card{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+#card-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#card-left{
+    width: 60%;
+    height: 100%;
+    background-color: #ffca0a;
+    border-radius: 5px 0px 0px 5px;
+    position: relative;
+    overflow: visible;
+}
+#card-right{
+    width: 40%;
+    height: 100%;
+    background-color: #F5E6B8;
+    border-radius: 0px 5px 5px 0px;
+    position: relative;
+}
+#navbar{
+    width: 100%;
+    position: absolute;  
+}
+#pokemon-logo{
+    position: absolute;
+    width: 70px;
+    left: 20px;
+    top: 10px;
+
+}
+#menu-icon{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+#menu-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 15px;
+}
+#pokemon-content{
+    position: absolute;
+    top: 80px;
+    left: 25px;
+}
+#pokemon-category{
+    font-size: 5.5px;
+    font-weight: bold;
+    font-family: titlefont;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-left: 2px;
+}
+#pokemon-title{
+    font-size: 40px;
+    font-family: titlefont2;
+    margin-top: 5px;
+}
+#pokemon-description{
+    font-size: 6px;
+    font-family: logofont;
+    padding-left: 2px;
+    line-height: 12px;
+    margin-top: 5px;
+    max-width: 129px;
+    text-align: left;
+    color: #3d3d3d;
+    
+}
+#page-number{
+    font-size: 6px;
+    font-family: titlefont;
+    padding-left: 2px;
+    margin-top: 10px;
+    position: relative;
+    padding-left: 22px;
+}
+#page-number span {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 16px;
+    height: 0.7px;
+    background-color: black;
+}
+#pikachu-image {
+    position: absolute;
+    top: 50px;
+    left: 220px;
+    z-index: 10;
+}
+#pikachu-image img {
+    width: 230px;
+    
+}
+
+#pokeball-image img{
+    position: absolute;
+    width: 110px;
+    left: 5px;
+    bottom: 0px;
+    transform: translateY(35%);
+    opacity: 0.1;
+
+}
+
+#page-dots {
+    position: absolute;
+    right: 18px;
+    top: 48%;
+}
+
+#page-dots span {
+    display: block;
+    width: 3.5px;
+    height: 3.5px;
+    background-color: #ffca0a;
+    border-radius: 50%;
+    margin: 6px 0;
+}
+#page-dots span:first-child {
+    width: 4px;
+    height: 4px;
+    background-color: black;
+}

@@ -1,0 +1,327 @@
+/* ==========================================================
+   1. RESET & THEME VARIABLES
+   ========================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-dark: #08080a;
+  --card-bg: #121215;
+  --card-border: #1d1d22;
+  --accent-orange: #e68244;
+  --accent-glow: rgba(217, 107, 39, 0.3);
+  --text-primary: #ffffff;
+  --text-muted: #888892;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* ==========================================================
+   2. HEADER
+   ========================================================== */
+.header {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.header h1 {
+  font-family: var(--font-serif);
+  font-size: 3.2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Flexbox container to align lines and logo side-by-side */
+.divider {
+  display: flex;
+  align-items: center;      
+  justify-content: center; 
+  gap: 5px;               
+  margin-top: 6px;
+}
+
+/* Line elements */
+.divider .line {
+  height: 1px;
+  width: 50px;             
+  background-color: var(--accent-orange);
+  opacity: 0.3;
+}
+
+/* Logo image styling */
+.divider-logo {
+  width: 30px;             
+  height: auto;
+}
+
+/* ==========================================================
+   3. DRINK CARDS (Flexbox + Position Relative/Absolute)
+   ========================================================== */
+.cards-grid {
+  display: flex;
+  gap: 18px;
+}
+
+.card {
+  position: relative; 
+  flex: 1;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 24px 16px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-glow {
+  border: 1px solid var(--accent-orange);
+  box-shadow: inset 0 0 20px rgba(217, 107, 39, 0.35);
+}
+
+/* Position Absolute Badges */
+.badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-size: 0.68rem;
+  padding: 4px 10px;
+  border-radius: 15px;
+  border: 1px solid var(--accent-orange);
+  color: var(--accent-orange);
+  background-color: rgba(217, 107, 39, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-sans);
+}
+
+.badge-star i { font-size: 0.65rem; }
+.badge-dot i { font-size: 0.45rem; }
+
+.card-media {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.card-media img {
+  max-height: 90%;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 14px rgba(0, 0, 0, 0.8));
+}
+
+.card-title {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.card-subtitle {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+.price {
+  margin-top: auto;
+  color: var(--accent-orange);
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* ==========================================================
+   4. CHEF'S SPECIAL BANNER
+   ========================================================== */
+.banner {
+  position: relative;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  padding: 32px 36px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  overflow: hidden;
+}
+
+.banner-img {
+  flex: 0 0 310px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.banner-img img {
+  width: 100%;
+  display: block;
+}
+
+.banner-info {
+  flex: 1;
+  z-index: 2;
+}
+
+.tag-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.tag {
+  color: var(--accent-orange);
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.tag-row .line {
+  height: 1px;
+  width: 40px;
+  background-color: var(--accent-orange);
+  opacity: 0.4;
+}
+
+.banner-info h2 {
+  font-family: var(--font-serif);
+  font-size: 2.3rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.banner-sub {
+  color: #d1d1d8;
+  font-size: 0.92rem;
+  margin-bottom: 12px;
+}
+
+.banner-desc {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  line-height: 1.6;
+  margin-bottom: 22px;
+  max-width: 480px;
+}
+
+.btn-explore {
+  background: transparent;
+  border: 1px solid var(--accent-orange);
+  color: var(--accent-orange);
+  padding: 10px 22px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-explore:hover {
+  background-color: var(--accent-orange);
+  color: #000;
+  box-shadow: 0 0 15px var(--accent-glow);
+}
+
+/* Watermark Leaf Pattern on Right */
+.leaf-watermark {
+  position: absolute;
+  right: -10px;          
+  bottom: 0px;
+  z-index: 1;         
+  pointer-events: none;  
+}
+.leaf-watermark img {
+  width: 280px;       
+  height: auto;        
+   opacity: 0.4;   
+  transform: rotate(-10deg);
+}
+
+/* ==========================================================
+   5. FOOTER SECTION
+   ========================================================== */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  border-top: 1px solid #db611071;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.footer-nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+  color: var(--accent-orange);
+}
+
+.footer-nav .dot {
+  color: var(--accent-orange);
+  font-size: 0.5rem;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-btn {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--accent-orange);
+  border-radius: 50%;
+  color: var(--accent-orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.icon-btn:hover {
+  background-color: rgba(217, 107, 39, 0.15);
+}

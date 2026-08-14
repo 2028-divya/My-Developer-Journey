@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insect Design Assignment</title>
+  <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+ <link rel="shortcut icon" href="./Assets/outline-bug.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- Main Container -->
+  <div class="container">
+    
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <div class="nav-left">
+        <h2 class="logo">INSECT</h2>
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+      
+      <nav class="nav-right">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Left Panel (White Side) -->
+    <div class="panel left-panel">
+      <h1 class="vertical-title">Classification</h1>
+
+      <div class="taxonomy-list">
+        <div class="taxonomy-item">
+          <span class="label">Class:</span>
+          <span class="value">Insecta</span>
+        </div>
+        <div class="taxonomy-item">
+          <span class="label">Order:</span>
+          <span class="value">Coleoptera</span>
+        </div>
+        <div class="taxonomy-item">
+          <span class="label">Family:</span>
+          <span class="value">Cerambycidae</span>
+        </div>
+        <div class="taxonomy-item">
+          <span class="label">Sub-Family:</span>
+          <span class="value">Cerambycinae</span>
+        </div>
+        <div class="taxonomy-item">
+          <span class="label">Tribe:</span>
+          <span class="value">Callichromatini</span>
+        </div>
+        <div class="taxonomy-item">
+          <span class="label">Genus:</span>
+          <span class="value">Pachyteria</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Panel (Red Side) -->
+    <div class="panel right-panel">
+      <div class="product-details">
+        <h1 class="product-title">Pachyteria<br>equestris</h1>
+
+        <!-- Spec Section -->
+        <div class="spec-section">
+          <div class="spec-left">
+            <img src="./Assets/outline-bug.png" alt="Beetle Icon" class="beetle-icon">
+            <span class="size-label">32 mm</span>
+          </div>
+
+          <div class="vertical-divider"></div>
+
+          <div class="spec-right">
+            <!-- Locality -->
+            <div class="info-row">
+              <svg class="info-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <div>
+                <span class="info-title">Locality:</span>
+                <span class="info-val">Malaysia</span>
+              </div>
+            </div>
+
+            <!-- Sex (Male Symbol) -->
+            <div class="info-row">
+              <svg class="info-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="10" cy="14" r="5"></circle>
+                <line x1="19" y1="5" x2="13.5" y2="10.5"></line>
+                <polyline points="14 5 19 5 19 10"></polyline>
+              </svg>
+              <div>
+                <span class="info-title">Sex:</span>
+                <span class="info-val">Male</span>
+              </div>
+            </div>
+
+            <!-- Size -->
+            <div class="info-row">
+              <svg class="info-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M2 12h20M6 8v8M10 9v6M14 8v8M18 9v6"></path>
+              </svg>
+              <div>
+                <span class="info-title">Size:</span>
+                <span class="info-val">32 mm / 12 mm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="price">$5.99</div>
+
+        <!-- Basic Checkboxes -->
+        <div class="toggle-group">
+  
+  <!-- Toggle OFF (Circle on Left) -->
+  <div class="toggle-item">
+    <svg width="36" height="20" viewBox="0 0 36 20">
+      <rect width="36" height="20" rx="10" fill="rgba(255, 255, 255, 0.3)"/>
+      <circle cx="10" cy="10" r="7" fill="#ffffff"/>
+    </svg>
+    <span>View detailed antennae</span>
+  </div>
+
+  <!-- Toggle ON (Circle on Right) -->
+  <div class="toggle-item">
+    <svg width="36" height="20" viewBox="0 0 36 20">
+      <rect width="36" height="20" rx="10" fill="rgba(255, 255, 255, 0.3)"/>
+      <circle cx="10" cy="10" r="7" fill="#ffffff"/>
+    </svg>
+    <span>View underside</span>
+  </div>
+
+</div>
+
+        <button class="add-btn">Add to collection</button>
+      </div>
+    </div>
+
+    <!-- Center Floating Jar Image -->
+    <div class="jar-wrapper">
+      <img src="./Assets/jar-bug.png" alt="Insect in Jar" class="jar-image">
+    </div>
+
+  </div>
+
+</body>
+</html>

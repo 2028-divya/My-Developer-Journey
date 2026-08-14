@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro-UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Assets/MainView.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="shortcut icon" href="./Assets/Main-View.png" type="image/x-icon">
+</head>
+<body>
+
+    <div id="container">
+
+        <header id="navbar">
+            <section id="logo">Astro</section>
+            <section id="navigation">
+                <span>PRODUCTS</span>
+                <span>CATEGORY</span>
+                <span>ABOUT US</span>
+                <span>CONTACT</span>
+            </section>
+            <section id="icons">
+                <i class="ri-search-line"></i>
+                <i class="ri-shopping-cart-line"></i>
+                <i class="ri-user-line"></i>
+            </section>
+        </header>
+
+        <main id="product-section">
+
+            <section id="product-info">
+                <span class="badge-new">NEW</span>
+                
+                <h1 class="product-title">
+                    ASTRO<br>
+                    WINTER<br>
+                    <span class="title-line">ARMOR <span>II</span></span>
+                </h1>
+                
+                <div class="product-price">$560</div>
+
+                <div class="details-panel">
+                    <!-- panel Item 1 -->
+                    <div class="panel-item">
+                        <div class="panel-header">
+                            <span>DESCRIPTION</span>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                A next-gen cold war jacket. The essence of retro style and the resilience you need for extreme winter conditions. Engineered to provide versatile function for your winter wardrobe, accented with strategic utility details.
+                            </p>
+                            <a href="#" class="read-more">
+                                READ MORE <i class="ri-arrow-right-s-line"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- panel Item 2 -->
+                    <div class="panel-item">
+                        <div class="panel-header">
+                            <span>MATERIAL & CARE</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                    </div>
+
+                    <!-- panel Item 3 -->
+                    <div class="panel-item">
+                        <div class="panel-header">
+                            <span>SHIPPING & RETURNS</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="product-image">
+                <div class="main-img-container">
+                    <img src="./Assets/Main-View.png" alt="Astro Winter Armor II">
+                </div>
+
+                <div id="quick-features">
+                    <div class="quick-feature-item">
+                        <i class="ri-snowflake-line"></i>
+                        <span>EXTREME WARMTH</span>
+                    </div>
+                    <div class="quick-feature-item">
+                        <i class="ri-shield-cross-line"></i>
+                        <span>WIND RESISTANT</span>
+                    </div>
+                    <div class="quick-feature-item">
+                        <i class="ri-quill-pen-line"></i>
+                        <span>LIGHTWEIGHT</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="product-options">
+
+                <!-- Size Selection -->
+                <div class="option-group">
+                    <label class="option-title">SIZE</label>
+                    <div class="size-boxes">
+                        <button class="size-btn">S</button>
+                        <button class="size-btn active">M</button>
+                        <button class="size-btn">L</button>
+                        <button class="size-btn">XL</button>
+                    </div>
+                    <a href="#" class="size-guide">
+                        SIZE GUIDE <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                </div>
+
+                <!-- Color Selection -->
+                <div class="option-group">
+                    <label class="option-title">COLOR</label>
+                    <div class="color-grid">
+                        <div class="color-card active">
+                            <img src="./Assets/Beige-Jacket.png" alt="Beige">
+                            <span>BEIGE</span>
+                        </div>
+                        <div class="color-card">
+                            <img src="./Assets/Red-Jacket.png" alt="Red">
+                            <span>RED</span>
+                        </div>
+                        <div class="color-card">
+                            <img src="./Assets/Black-Jacket.png" alt="Black">
+                            <span>BLACK</span>
+                        </div>
+                        <div class="color-card">
+                            <img src="./Assets/White-Jacket.png" alt="White">
+                            <span>WHITE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="btn-wishlist">
+                        <i class="ri-heart-line"></i> ADD TO WISHLIST
+                    </button>
+                    <button class="btn-bag">
+                        ADD TO BAG <i class="ri-shopping-bag-3-line"></i>
+                    </button>
+                </div>
+
+            </section>
+
+        </main>
+
+                <!-- FEATURE CARDS ROW -->
+        <section id="features">
+            <div class="feature-card">
+                <img src="./Assets/View-1.png" alt="3x Water Repellent">
+                <div class="feature-text">
+                    <h4>3X WATER-REPELLENT</h4>
+                    <p>The fabric repels rain, snow and moisture while keeping you dry.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <img src="./Assets/View-2.png" alt="3D Areas Puffered">
+                <div class="feature-text">
+                    <h4>3D AREAS PUFFERED</h4>
+                    <p>Strategically padded zones trap heat and maximize insulation.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <img src="./Assets/View-3.png" alt="Insulation">
+                <div class="feature-text">
+                    <h4>INSULATION</h4>
+                    <p>Advanced thermal filling locks in warmth up to -30°C.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <img src="./Assets/View-4.png" alt="Utility Pockets">
+                <div class="feature-text">
+                    <h4>UTILITY POCKETS</h4>
+                    <p>Multi-functional pockets for secure storage on the go.</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="bottom-features">
+            <div class="bottom-feature-item">
+                <i class="ri-shield-keyhole-line"></i>
+                <div class="bottom-feature-text">
+                    <h5>PREMIUM FABRICS</h5>
+                    <p>Durable, high-performance materials.</p>
+                </div>
+            </div>
+
+            <div class="bottom-feature-item">
+                <i class="ri-add-box-line"></i>
+                <div class="bottom-feature-text">
+                    <h5>THERMAL PROTECTION</h5>
+                    <p>Built for extreme winter climates.</p>
+                </div>
+            </div>
+
+            <div class="bottom-feature-item">
+                <i class="ri-focus-2-line"></i>
+                <div class="bottom-feature-text">
+                    <h5>DESIGNED FOR FUNCTION</h5>
+                    <p>Every detail serves a purpose.</p>
+                </div>
+            </div>
+
+            <div class="bottom-feature-item">
+                <i class="ri-star-line"></i>
+                <div class="bottom-feature-text">
+                    <h5>LIMITED EDITION</h5>
+                    <p>Exclusive drops, limited quantities.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

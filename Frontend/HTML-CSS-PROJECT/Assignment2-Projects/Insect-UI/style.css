@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* --- Main Layout --- */
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: relative; /* Anchor for absolute children */
+}
+
+.panel {
+  width: 50%;
+  height: 100%;
+}
+
+/* --- Top Navigation Bar --- */
+.navbar {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 88px;
+}
+
+.logo {
+  position: relative;
+  left: 15px;
+  font-size: 20px;
+  color: #22443c;;
+}
+
+.search-box {
+  width: 280px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #eaeaea;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.search-icon {
+  stroke: #555;
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+}
+
+.nav-right {
+  display: flex;
+  gap: 70px;
+}
+
+.nav-right a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* --- Left Panel (White) --- */
+.left-panel {
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.vertical-title {
+  position: absolute;
+  left: -18px;
+  top: 46%;
+  transform: rotate(-90deg);
+  font-family: 'Playfair Display', 'Bodoni Moda', serif;
+  font-size: 40px;
+  letter-spacing: 2px;  
+  font-weight: 530; 
+  color: #22443c;
+}
+
+.taxonomy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 200px;
+}
+
+.taxonomy-item {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.taxonomy-item .label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+}
+
+.taxonomy-item .value {
+  font-size: 14px;
+  color: #666;
+}
+
+/* --- Right Panel (Red) --- */
+.right-panel {
+  background-color: #b82e28;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 260px;
+}
+
+.product-title {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+/* Metadata & Specs */
+.spec-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.spec-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.beetle-icon {
+  width: 45px;
+  height: auto;
+}
+
+.size-label {
+  font-size: 12px;
+}
+
+.vertical-divider {
+  width: 1px;
+  height: 60px;
+  background-color: #ffffff;
+  opacity: 0.4;
+}
+
+.spec-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-icon {
+  stroke: #d8b88d;
+}
+
+.info-title {
+  font-size: 12px;
+  opacity: 0.8;
+  display: block;
+}
+
+.info-val {
+  font-size: 13px;
+}
+
+.price {
+  color: #d8b88d;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Standard Checkbox Items */
+.toggle-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* Hide default checkbox square */
+.switch input {
+  display: none;
+}
+
+/* Background pill track */
+.slider {
+  width: 36px;
+  height: 18px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  position: relative;
+}
+
+/* Circle inside the pill */
+.toggle-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.toggle-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.toggle-item svg {
+  flex-shrink: 0;
+}
+
+/* Simple Button */
+.add-btn {
+  padding: 12px 20px;
+  background-color: #d8b88d;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* --- Center Jar Image --- */
+.jar-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.jar-image {
+  height: 400px;
+}

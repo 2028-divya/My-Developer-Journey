@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gunaforycter UI</title>
+    
+    <!-- Typography (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icon Library (Font Awesome 6) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="./Assets/drink-1.png" type="image/x-icon">
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <!-- Header Section -->
+    <header class="header">
+  <h1>Gunaforycter</h1>
+
+  <div class="divider">
+    <span class="line"></span>
+    <img src="./Assets/logo.png" alt="Logo" class="divider-logo">
+    <span class="line"></span>
+  </div>
+</header>
+
+    <!-- SECTION 1: Drink Cards Grid -->
+    <section class="cards-grid">
+      
+      <!-- Card 1: Signature (Active Orange Glow) -->
+      <article class="card card-glow">
+        <span class="badge badge-star"><i class="fa-solid fa-star"></i> Signature</span>
+        <div class="card-media">
+          <img src="./Assets/drink-1.png" alt="Sunset Flame">
+        </div>
+        <h3 class="card-title">Sunset Flame</h3>
+        <p class="card-subtitle">Tropical & Refreshing</p>
+        <span class="price">$12.94</span>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card">
+        <div class="card-media">
+          <img src="./Assets/drink-2.png" alt="Tropical Passion">
+        </div>
+        <h3 class="card-title">Tropical Passion</h3>
+        <p class="card-subtitle">Fruity & Exotic</p>
+        <span class="price">$11.04</span>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card">
+        <div class="card-media">
+          <img src="./Assets/drink-3.png" alt="Citrus Dawn">
+        </div>
+        <h3 class="card-title">Citrus Dawn</h3>
+        <p class="card-subtitle">Citrusy & Energizing</p>
+        <span class="price">$10.13</span>
+      </article>
+
+      <!-- Card 4: New Badge -->
+      <article class="card">
+        <span class="badge badge-dot"><i class="fa-solid fa-circle"></i> New</span>
+        <div class="card-media">
+          <img src="./Assets/drink-4.png" alt="Berry Breeze">
+        </div>
+        <h3 class="card-title">Berry Breeze</h3>
+        <p class="card-subtitle">Sweet & Cool</p>
+        <span class="price">$9.48</span>
+      </article>
+
+    </section>
+
+    <!-- SECTION 2: Chef's Special Banner -->
+    <section class="banner">
+      <div class="banner-img">
+        <img src="./Assets/special-dish.png" alt="Chef's Special">
+      </div>
+
+      <div class="banner-info">
+        <div class="tag-row">
+          <span class="tag">CHEF'S SPECIAL</span>
+          <span class="line"></span>
+        </div>
+        <h2>Bouliauts for laguanens</h2>
+        <p class="banner-sub">Experience our signature culinary creations.</p>
+        <p class="banner-desc">Meticulously crafted with premium ingredients to deliver exceptional flavors and an unforgettable dining experience. Perfect for sharing or savoring on your own.</p>
+        
+        <button class="btn-explore">
+          Explore Menu <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <!-- Background Leaf Decoration -->
+      <div class="leaf-watermark">
+        <img src="./Assets/leaf-image.png"alt="Leaf">
+      </div>
+    </section>
+
+    <!-- SECTION 3: Footer -->
+    <footer class="footer">
+      <p class="copyright">&copy; Gunaforycter 2025</p>
+
+      <nav class="footer-nav">
+        <a href="#">Explore</a>
+        <span class="dot">•</span>
+        <a href="#">Food Menu</a>
+        <span class="dot">•</span>
+        <a href="#">Drinks</a>
+        <span class="dot">•</span>
+        <a href="#">Reservations</a>
+      </nav>
+
+      <div class="socials">
+        <span>Follow Us</span>
+        <a href="#" title="insta-icon" class="icon-btn"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" title="facebook-icon" class="icon-btn"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" title="twitter-icon" class="icon-btn"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
